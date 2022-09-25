@@ -25,13 +25,15 @@ for row_str in input_file_lines:
   row_dict_arr.append(row_dict)
 
 print(f"{max_x}, {max_y}")
-print(row_dict_arr)
 
 maze_matrix = [[[1 for w in range(4)] for x in range(max_x)] for y in range(max_y)]
 
-print(maze_matrix)
+def check_if_wall(distance):
+  return (1 if (distance > 0.25) else 0)
 
 for row_dict in row_dict_arr:
-   x = row_dict["x"]
-   y = row_dict["y"]
-   maze_matrix[y][x] = row_dict["walls"]
+   x = row_dict["x"]-1
+   y = row_dict["y"]-1
+   maze_matrix[y][x] = [check_if_wall(wall) for wall in row_dict["walls"]]
+
+print(maze_matrix)
