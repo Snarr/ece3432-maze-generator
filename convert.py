@@ -22,4 +22,6 @@ for row_str in input_file_lines:
   if (row_dict["x"] > max_x): max_x = row_dict["x"]
   if (row_dict["y"] > max_y): max_y = row_dict["y"]
 
+  row_dict_arr.append(row_dict)
+
 print(f"{max_x}, {max_y}")
