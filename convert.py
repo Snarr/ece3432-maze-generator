@@ -1,5 +1,6 @@
 # Configuration
 INPUT_FILE_NAME = "input.txt"
+OUTPUT_FILE_NAME = "output.txt"
 
 input_file = open(INPUT_FILE_NAME, "r")
 input_file_lines = input_file.readlines()
@@ -36,4 +37,8 @@ for row_dict in row_dict_arr:
    y = row_dict["y"]-1
    maze_matrix[y][x] = [check_if_wall(wall) for wall in row_dict["walls"]]
 
-print(maze_matrix)
+output_file = open(OUTPUT_FILE_NAME, "w")
+
+for i, row in enumerate(maze_matrix):
+    for j, col in enumerate(row):
+      output_file.write(f"\"({j}, {i})\",{col[0]},{col[2]},{col[3]},{col[1]}\n")
