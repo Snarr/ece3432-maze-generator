@@ -25,3 +25,13 @@ for row_str in input_file_lines:
   row_dict_arr.append(row_dict)
 
 print(f"{max_x}, {max_y}")
+print(row_dict_arr)
+
+maze_matrix = [[[1 for w in range(4)] for x in range(max_x)] for y in range(max_y)]
+
+print(maze_matrix)
+
+for row_dict in row_dict_arr:
+   x = row_dict["x"]
+   y = row_dict["y"]
+   maze_matrix[y][x] = row_dict["walls"]
