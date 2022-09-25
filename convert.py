@@ -39,6 +39,8 @@ for row_dict in row_dict_arr:
 
 output_file = open(OUTPUT_FILE_NAME, "w")
 
+output_file.write("  cell  ,E,W,N,S\n")
+
 for i, row in enumerate(maze_matrix):
     for j, col in enumerate(row):
-      output_file.write(f"\"({j}, {i})\",{col[0]},{col[2]},{col[3]},{col[1]}\n")
+      output_file.write(f"\"({j+1}, {i+1})\",{col[0]},{col[2]},{col[3]},{col[1]}\n")
