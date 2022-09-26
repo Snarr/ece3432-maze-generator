@@ -6,12 +6,6 @@ The output of this program is designed to be used with the Pyamaze package for g
 
 # Usage
 
-## Execution
-
-```
-python convert.py
-```
-
 ## Configuration
 
 The program consists of two configuration variables at the top of the file for choosing the input and output file names.
@@ -22,6 +16,11 @@ INPUT_FILE_NAME = "input.txt"
 OUTPUT_FILE_NAME = "output.txt"
 ```
 
+## Execution
+
+```
+python convert.py
+```
 ## Input
 
 The program reads through input files assuming the following format on each line:
