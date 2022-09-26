@@ -41,9 +41,10 @@ The program outputs wall location data in the following format:
 "(3, 2)",0,0,1,1
 ... <more lines below>
 ```
-- Where the X coordinate of the point is 3, the Y coordinate of the point is 2, with each "0" indicating a wall in that direction and each "1" indicating no wall before the next coordinate point.
+- Where the X coordinate of the point is 3, the Y coordinate of the point is 2, with each "0" indicating a wall in that direction (denoted if distance is <= 0.25 meters) and each "1" indicating no wall before the next coordinate point (denoted if distance is > 0.25 meters).
 
 # Notes
+- Program decides if walls are present if they are within `0.25 meters` of distance in a given direction.
 - "0" in the output indicates a wall (according to pyamaze)
 - "1" in the output indicates no wall (according to pyamaze)
 - The input file orders the wall directions "East, South, West, North" (assignment requirement)
