@@ -1,3 +1,9 @@
+# Sample Output
+
+Run the program with the given `input.txt` file
+Compare your results to the following sample output:
+
+```
   cell  ,E,W,N,S
 "(1, 1)",0,1,1,0
 "(2, 1)",1,1,1,0
@@ -15,3 +21,4 @@
 "(2, 4)",0,0,1,1
 "(3, 4)",0,1,1,1
 "(4, 4)",0,1,0,0
+```
