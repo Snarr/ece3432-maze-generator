@@ -2,6 +2,8 @@
 
 This program was developed for an assignment in my ECE 3432 "Robotic Control using Raspberry Pi Microcontroller" elective course. The goal of this program is to take in an unordered list of data about wall locations within a maze and outputs an ordered list of said data, optimized for use with the Pyamaze library. My implementation works for mazes of any size by storing the maximum X and Y coordinate values when initially reading the unordered wall location data points. 
 
+The output of this program is designed to be used with the Pyamaze package for generating mazes with Python. [Check out Pyamaze here](https://github.com/MAN1986/pyamaze).
+
 # Usage
 
 ## Execution
