@@ -13,7 +13,7 @@ The program consists of two configuration variables at the top of the file for c
 ```
 # Example
 INPUT_FILE_NAME = "input.txt"
-OUTPUT_FILE_NAME = "output.txt"
+OUTPUT_FILE_NAME = "output.csv"
 ```
 
 ## Execution

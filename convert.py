@@ -1,6 +1,6 @@
 # Configuration
 INPUT_FILE_NAME = "./example/input.txt"
-OUTPUT_FILE_NAME = "./example/output.txt"
+OUTPUT_FILE_NAME = "./example/output.csv"
 
 # Open input file for file reading
 input_file = open(INPUT_FILE_NAME, "r")
