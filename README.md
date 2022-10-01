@@ -6,21 +6,22 @@ The output of this program is designed to be used with the Pyamaze package for g
 
 # Usage
 
-## Configuration
+1. Place the `MazeConverter.py` file in the same directory as your program. Alternatively, install the `MazeConverter.py` file to your Python packages.
 
-The program consists of two configuration variables at the top of the file for choosing the input and output file names.
-
-```
-# Example
-INPUT_FILE_NAME = "input.txt"
-OUTPUT_FILE_NAME = "output.csv"
-```
-
-## Execution
+2. Use the following code to get started:
 
 ```
-python convert.py
+# Import package
+from MazeConverter import MazeConverter
+
+# Make new instance of a Maze Converter
+mazeConverter = MazeConverter()
+
+# Use the convert command with an Input File Path (string) and an Output File Path (string)
+mazeConverter.convert("./input.txt", "./output.txt")
+
 ```
+
 ## Input
 
 The program reads through input files assuming the following format on each line:
