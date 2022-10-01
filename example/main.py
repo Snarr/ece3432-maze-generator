@@ -3,4 +3,4 @@ from MazeConverter import MazeConverter
 
 converter = MazeConverter()
 
-converter.convert("./example/input.txt", "./example/output.txt")
+converter.convert("./input.txt", "./output.txt")
